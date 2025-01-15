@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jura", serif;
+}
+
+body {
+    background: linear-gradient(163deg, #000122, #11134b, #394080);;
+}
+
+section {
+    border-bottom: 1px solid rgba(207, 207, 207, 0.268);
+}
+
+.cabecalho {
+    /*background: linear-gradient(163deg, #000122, #11134b, #394080);*/
+    background-color: transparent;
+    height: 5.3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cabecalho > nav {
+    height: 1rem;
+}
+
+.cabecalho > nav > ul {
+    display: flex;
+    list-style-type: none;
+    height: 1rem;
+    margin-right: 6.2rem;
+    align-items: center;
+}
+
+/*.cabecalho > nav > ul > li {
+    background-color: red;
+    /*margin-right: 1.1rem;
+    height: 1rem;
+    padding: 0.8rem;
+    padding-right: 0.6rem;
+    font-size: 1.3rem;
+    font-family: "IBM Plex Mono", serif;
+    border-right: 2px solid white;
+    color: white;
+    line-height: 0.1rem;
+}*/
+
+.cabecalho > nav > ul > li {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho > nav > ul > li > a {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    padding-right: 0.6rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.cabecalho > nav > ul > li > a:hover {
+    color: white;
+}
+
+.cabecalho > nav > ul > li > a:hover::after {
+    height: 2.1rem;
+    top: 11px;
+    background-color: white;
+}
+
+.cabecalho > nav > ul > li > a::after {
+    content: ' ';
+    display: inline-block;
+    height: 1rem;
+    width: 1.8px;
+    background-color: rgb(207, 207, 207);
+    margin-left: 0.7rem;
+    position: absolute;
+    top: 18.7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cabecalho > nav > ul > li > a.inicio-menu {
+    display: block;
+    width: 6rem;
+} 
+
+.cabecalho > nav > ul > li > a.sobmim-menu {
+    margin-left: -25px;
+}
+
+section.inicio {
+    /*background: linear-gradient(162deg, #000122, #11134b, #394080);*/
+    background-color: transparent;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+section.inicio > span > h1 {
+    
+    color: white;
+    width: 37rem;
+    font-size: 3.7rem;
+    margin-top: 5.2rem;
+    margin-left: 2.3rem;
+    padding: 0.7rem;
+    line-height: 3.7rem;
+    font-weight: 500;
+}
+
+section.inicio > span > h2 {
+    margin-left: 3rem;
+    margin-top: 0.1rem;
+    
+    color: white;
+    width: 37rem;
+    font-weight: 100;
+}
+
+section.inicio > span > ul {
+    color: white;
+    margin-left: 2.12rem;
+    margin-top: 0.5rem;
+    width: 32rem;
+    height: 2.9rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 6.2rem 6.2rem 6.2rem;
+    column-gap: 2.6rem;
+}
+
+section.inicio > span > ul > li {
+    align-self: center;
+    display: flex;
+    width: 8.9rem;
+}
+
+section.inicio > span > ul > li.li-linkedin {
+    width: 8rem;
+}
+
+section.inicio > span > ul > li.li-git {
+    width: 7rem;
+    margin-left: 0.5rem;
+}
+
+section.inicio > span > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    /*background-color: rgb(255, 255, 255);*/
+    padding: 0.9rem;
+    display: block;
+    width: 9rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 26px;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+/*section.inicio > span > ul > li > a:hover {
+    /*background-color: white;
+    color: #11134b;
+}*/
+
+section.inicio > span > ul > li > a::after {
+    content: "🡥";
+    margin-left: 0.2rem;
+    position: absolute;
+    top: 13px;
+    transition: transform .2s ease-in-out;
+}
+
+section.inicio > span > ul > li > a:hover::after {
+    transform: translate(2px, -2px);
+}
+
+
+section.sobre-mim {
+    background-color: transparent;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 136px 1fr;
+}
+
+section.sobre-mim > aside {
+    grid-row: 1 /-1;
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: 100px 120px 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+section.sobre-mim > aside > img {
+    height: 500px;
+    border-radius: 50%;
+    grid-row: 2/-1;
+}
+
+section.sobre-mim > span {
+    display: grid;
+    grid-template-rows: 100px 120px 250px;
+}
+
+section.sobre-mim > span > h1 {
+    color: white;
+    grid-row: 2/2;
+    align-self: center;
+    font-size: 3rem;
+   /*padding-top: 2.7rem;*/
+}
+
+section.sobre-mim > span > p {
+    color: white;
+    grid-row: 3/ -1;
+    text-align: left;
+    text-indent: 1.5rem;
+    font-size: 1.5rem;
+    
+    width: 500px;
+}
+
+/*ANIMAÇÕES JavaScript*/
+
+.js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: .2s;
+}
+
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
