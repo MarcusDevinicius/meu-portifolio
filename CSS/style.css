@@ -15,11 +15,16 @@ section {
 
 .cabecalho {
     /*background: linear-gradient(163deg, #000122, #11134b, #394080);*/
-    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(2, 9, 31, 0.23);
     height: 5.3rem;
     display: flex;
     justify-content: end;
     align-items: center;
+    width: 100%;
+    z-index: 1;
 }
 
 .cabecalho > nav {
@@ -55,12 +60,13 @@ section {
 
 .cabecalho > nav > ul > li > a {
     text-decoration: none;
-    color: rgb(207, 207, 207);
+    color: rgb(148, 148, 148);
     font-size: 1.3rem;
     padding: 0.8rem;
     padding-right: 0.6rem;
     margin-right: 1rem;
     position: relative;
+    display: block;
 }
 
 .cabecalho > nav > ul > li > a:hover {
@@ -78,7 +84,7 @@ section {
     display: inline-block;
     height: 1rem;
     width: 1.8px;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(148, 148, 148);
     margin-left: 0.7rem;
     position: absolute;
     top: 18.7px;
@@ -100,6 +106,7 @@ section.inicio {
     height: 100vh;
     display: grid;
     grid-template-columns: 60% 40%;
+    grid-template-rows: 70px 1fr;
 }
 
 section.inicio > span > h1 {
@@ -181,10 +188,16 @@ section.inicio > span > ul > li > a:hover::after {
     transform: translate(2px, -2px);
 }
 
+section.inicio > aside {
+    background-color: yellowgreen;
+    grid-column: 2;
+    grid-row: 2/ -1;
+}
+
 
 section.sobre-mim {
     background-color: transparent;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 136px 1fr;
@@ -228,15 +241,155 @@ section.sobre-mim > span > p {
     width: 500px;
 }
 
+section.habilidades {
+   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 250px 250px 1fr;
+    height: 100vh;
+}
+
+section.habilidades > article {
+    justify-self: center;
+    align-content: center;
+    grid-row: 2/ 4;
+    background-color: #0a0c4c4d;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+}
+
+section.habilidades > article > span > h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+section.habilidades > article > span > p {
+    font-size: 1.8rem;
+   
+    width: 430px;
+    padding: 0.3rem;
+    color: white;
+}
+
+section.habilidades > aside {
+    grid-column: 2;
+    grid-row: 2 /3;
+    justify-self: center;
+    align-self: center;
+    column-gap: 40px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 350px;
+    width: 400px;
+}
+
+section.habilidades > aside > a  {
+    background-color: #0a0c4c4d;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+section.habilidades > aside > a:hover {
+    background-color: #0a0c4cc1;
+
+}
+
+
+section.habilidades > aside > a > img {
+    width: 70px;
+    
+    align-self: center;
+    justify-self: center;
+}
+
+section.habilidades > aside > a > img.html {
+    width: 67px;
+}
+
+section.habilidades > aside > a.html {
+    align-self: center;
+    justify-self: center;
+}
+
+section.habilidades > aside > a.css {
+    align-self: center;
+    justify-self: center;
+}
+
+section.habilidades > aside > a > img.icone-css {
+    display: block;
+    height: 70px;
+    width: 70px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+section.habilidades > aside > a.js {
+    align-self: center;
+    justify-self: center;
+}
+
+section.habilidades > aside > a > img.icone-js {
+    height: 70px;
+}
+
+section.habilidades > aside > a.git {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+section.habilidades > aside > a > img.icone-git {
+    grid-column: 2;
+    grid-row: 2;
+}
+
 /*ANIMAÇÕES JavaScript*/
 
-.js-scroll {
+/*.js-scroll {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
     transition: .2s;
-}
+}*/
 
 .js-scroll.ativo {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+section.habilidades > article > span {
+    display: none;
+}
+
+section.habilidades > article > span.active {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }

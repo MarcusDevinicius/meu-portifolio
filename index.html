@@ -16,16 +16,16 @@
 <body>
     <header class="cabecalho">
         <nav class="menu">
-            <ul>
-                <li><a href="" class="inicio-menu">Início</a></li>
-                <li><a href="" class="sobmim-menu">Sobre Mim</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Projetos</a></li>
+            <ul class="js-menu">
+                <li><a href="#inicio" class="inicio-menu a-menu">Início</a></li>
+                <li><a href="#sobmim" class="sobmim-menu a-menu">Sobre Mim</a></li>
+                <li><a href="#habilidades" class="a-menu">Habilidades</a></li>
+                <li><a href="#projetos" class="a-menu">Projetos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="inicio js-scroll ativo">
+        <section class="inicio js-scroll ativo" id="inicio">
             <span>
                 <h1>Olá, meu nome é Marcus Vinícius, sou Desenvolvedor Front End.</h1>
                 <h2>Eu crio interfaces de usuário usando tecnologias modernas Web.</h2>
@@ -39,7 +39,7 @@
                 <img src="" alt="Minha Foto de perfil">
             </aside>
         </section>
-        <section class="sobre-mim js-scroll">
+        <section class="sobre-mim js-scroll" id="sobmim">
             <aside>
                 <img src="src/imgs/minha-perfil.png" alt="Minha foto">
             </aside>
@@ -47,6 +47,36 @@
                 <h1>Sobre Mim</h1>
                 <p>Meu nome é Marcus Vinícius, me interessei por tecnologia há um ano e então me aprofundei em Programação Front End tendo como principal linguagem JavaScript. Depois de um tempo me identifiquei com UI design, aprendi Figma e me ajudou bastante como Desenvolvedor Web.</p>
             </span>
+        </section>
+        <section class="js-scroll habilidades" id="habilidades">
+            <article class="info-habilidades">
+                <span class="html info-skill">
+                    <h1>HTML5</h1>
+                    <p>Tenho cerca de 9 meses de experiência nessa tecnologia, com conhecimento das tags incluindo as semânticas e suas funções.</p>
+                </span>
+                <span class="css info-skill">
+                    <h1>CSS3</h1>
+                    <p>Tenho cerca de 9 meses de experiência nessa tecnologia, com conhecimento das tags incluindo as semânticas e suas funções.</p>
+                </span>
+                <span class="js info-skill">
+                    <h1>JavaScript ES6</h1>
+                    <p>Tenho cerca de 9 meses de experiência nessa tecnologia, com conhecimento das tags incluindo as semânticas e suas funções.</p>
+                </span>
+                <span class="git info-skill">
+                    <h1>GtiHub</h1>
+                    <p>Tenho cerca de 9 meses de experiência nessa tecnologia, com conhecimento das tags incluindo as semânticas e suas funções.</p>
+                </span>
+            </article>
+            <aside>
+                <a class="html icones-skill"><img src="src/imgs/html-5.png" alt="Ícone HTML" class="html"></a>
+
+                <a class="css icones-skill"><img src="src/imgs/css3-alt-brands-solid.svg" alt="Ícone CSS3" class="icone-css"></a>
+
+                <a class="js icones-skill"><img src="src/imgs/js-brands-solid.svg" alt="Ícone JavaScript" class="icone-js"></a>
+
+                <a class="git icones-skill"><img src="src/imgs/placa-do-github.png" alt="Logo GitHub" class="icone-git"></a>
+
+            </aside>
         </section>
     </main>
 
