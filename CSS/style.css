@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(163deg, #000122, #11134b, #394080);;
+    background: linear-gradient(163deg, #000122, #11134b, #394080);
 }
 
 section {
@@ -398,4 +398,22 @@ section.habilidades > article > span.active {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+
+header.inativo {
+    display: none;
+}
+
+.cabecalho-mobile {
+    background-color: black;
+    height: 90px;
+    max-width: 748px;
+    display: flex;
+}
+
+.cabecalho-mobile > span > img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }

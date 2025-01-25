@@ -1,0 +1,7 @@
+@media(width <= 767px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
