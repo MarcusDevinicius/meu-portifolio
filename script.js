@@ -57,12 +57,3 @@ if (iconesSkills.length && skillsinfo.length) {
 //})
 
 
-function menuMobile() {
-    const header = document.querySelector('header');
-    
-    if (window.innerWidth <= 767) {
-        header.classList.add('inativo');
-    }
-}
-
-menuMobile()

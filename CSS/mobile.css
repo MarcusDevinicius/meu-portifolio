@@ -1,7 +1,31 @@
 @media(width <= 767px) {
+    header.cabecalho {
+        display: none;
+    }
+
+    header.cabecalho-mobile {
+        display: block;
+        display: flex;
+        justify-content: end;
+        margin-right: 0.6rem;
+        align-items: center;
+    }
+
+    .cabecalho-mobile > span > img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #0a0c4c4d;
+        border-radius: 8px;
+    }
+    
+
     body {
         display: grid;
-        grid-template-columns: 1fr;
+        /*grid-template-rows: 5.6rem 41rem 11.5rem 20rem 1fr;*/
+        grid-template-rows: 5.6rem repeat(4, 1fr);
+        grid-template-columns: 100%;
         max-width: 100%;
     }
+    
 }
