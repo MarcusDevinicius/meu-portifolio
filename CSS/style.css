@@ -114,11 +114,17 @@ section.inicio {
     background-color: transparent;
     height: 100vh;
     display: grid;
-    grid-template-columns: 60% 40%;
+    /*grid-template-columns: 60% 40%;*/
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     grid-template-rows: 4.37rem 1fr;
 }
 
-section.inicio > span > h1 {
+section.inicio > div {
+    background-color: rgb(166, 60, 60);
+    height: 100vh;
+}
+
+section.inicio > div > h1 {
     
     color: white;
     width: 37rem;
@@ -130,7 +136,7 @@ section.inicio > span > h1 {
     font-weight: 500;
 }
 
-section.inicio > span > h2 {
+section.inicio > div > h2 {
     margin-left: 3rem;
     margin-top: 0.1rem;
     
@@ -139,7 +145,7 @@ section.inicio > span > h2 {
     font-weight: 100;
 }
 
-section.inicio > span > ul {
+section.inicio > div > ul {
     color: white;
     margin-left: 2.12rem;
     margin-top: 0.5rem;
@@ -151,23 +157,23 @@ section.inicio > span > ul {
     column-gap: 2.6rem;
 }
 
-section.inicio > span > ul > li {
+section.inicio > div > ul > li {
     align-self: center;
     display: flex;
     width: 8.9rem;
     flex-wrap: wrap;
 }
 
-section.inicio > span > ul > li.li-linkedin {
+section.inicio > div > ul > li.li-linkedin {
     width: 8rem;
 }
 
-section.inicio > span > ul > li.li-git {
+section.inicio > div > ul > li.li-git {
     width: 7rem;
     margin-left: 0.5rem;
 }
 
-section.inicio > span > ul > li > a {
+section.inicio > div > ul > li > a.links-desktop {
     text-decoration: none;
     color: #fff;
     /*background-color: rgb(255, 255, 255);*/
@@ -186,7 +192,7 @@ section.inicio > span > ul > li > a {
     color: #11134b;
 }*/
 
-section.inicio > span > ul > li > a::after {
+section.inicio > div > ul > li > a.links-desktop::after {
     content: "🡥";
     margin-left: 0.2rem;
     position: absolute;
@@ -194,7 +200,7 @@ section.inicio > span > ul > li > a::after {
     transition: transform .2s ease-in-out;
 }
 
-section.inicio > span > ul > li > a:hover::after {
+section.inicio > div > ul > li > a:hover::after {
     transform: translate(2px, -2px);
 }
 
@@ -230,12 +236,12 @@ section.sobre-mim > aside > img {
     display: block;
 }
 
-section.sobre-mim > span {
+section.sobre-mim > div {
     display: grid;
     grid-template-rows: 100px 120px 250px;
 }
 
-section.sobre-mim > span > h1 {
+section.sobre-mim > div > h1 {
     color: white;
     grid-row: 2/2;
     align-self: center;
@@ -243,7 +249,7 @@ section.sobre-mim > span > h1 {
    /*padding-top: 2.7rem;*/
 }
 
-section.sobre-mim > span > p {
+section.sobre-mim > div > p {
     color: white;
     grid-row: 3/ -1;
     text-align: left;
@@ -276,14 +282,14 @@ section.habilidades > article {
     border-radius: 1.2rem;
 }
 
-section.habilidades > article > span > h1 {
+section.habilidades > article > div > h1 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
     color: white;
 }
 
-section.habilidades > article > span > p {
+section.habilidades > article > div > p {
     font-size: 1.8rem;
    
     width: 430px;
@@ -389,11 +395,11 @@ section.habilidades > aside > a > img.icone-git {
     transform: translate3d(0, 0, 0);
 }
 
-section.habilidades > article > span {
+section.habilidades > article > div {
     display: none;
 }
 
-section.habilidades > article > span.active {
+section.habilidades > article > div.active {
     display: block !important;
     animation: show .5s forwards;
 }
@@ -426,4 +432,15 @@ header.inativo {
     max-width: 748px;
     max-width: 100vw;
     display: flex;
+}
+
+
+section.inicio > div > ul.ctt-mobile {
+    margin-top: 20px;
+    display: none;
+}
+
+section.inicio > div > ul.ctt-mobile > li > a > img {
+    width: 50px;
+
 }

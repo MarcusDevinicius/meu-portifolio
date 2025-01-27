@@ -23,9 +23,93 @@
     body {
         display: grid;
         /*grid-template-rows: 5.6rem 41rem 11.5rem 20rem 1fr;*/
-        grid-template-rows: 5.6rem repeat(4, 1fr);
+        grid-template-rows: 5rem repeat(4, 1fr);
         grid-template-columns: 100%;
-        max-width: 100%;
     }
     
+    section.inicio > div {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3rem 13rem 8rem;
+    }
+
+    section.inicio > div > h1 {
+        grid-row: 2/3;
+        background-color: rgb(89, 54, 9);
+        font-size: 2.5rem;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    section.inicio > div > h2 {
+        grid-row: 3;
+        background-color: rgb(2, 87, 87);
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        width: 31rem;
+    }
+
+    section.inicio > div > ul {
+        grid-row: 4;
+        justify-self: center;
+        align-self: center;
+    }
+
+    section.inicio > div > ul.ctt-desktop {
+        display: none;
+    }
+
+    section.inicio > div > ul.ctt-mobile {
+        display: block;
+        background-color: red;
+        height: 7.18rem;
+        max-width: 450px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        grid-gap: 0;
+        justify-items: center;
+    }
+
+    section.inicio > div > ul.ctt-mobile > li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        background-color: gray;
+        width: 100%;
+    }
+
+    section.inicio > div > ul.ctt-mobile > li > a.links-mobile {
+        background-color: rgb(31, 58, 3);
+        display: grid;
+        height: 90%;
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 68% 32%;
+        font-family: "Jura", serif;
+        text-decoration: none;
+        color: white;
+        justify-items: center;
+
+    }
+
+    section.inicio > div > ul.ctt-mobile > li > a > img {
+        grid-row: 1;
+        align-self: center;
+        background-color: blue;
+        width: 70px;
+        padding: 0.7rem;
+        border-radius: 0.9rem;
+    }
+
+    section.inicio > div > ul.ctt-mobile > li > a > p {
+        align-self: center;
+        font-weight: bolder;
+    }
 }
+

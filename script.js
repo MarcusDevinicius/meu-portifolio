@@ -32,7 +32,7 @@ linksInternos.forEach((link) => {
 })
 
 const iconesSkills = document.querySelectorAll('aside .icones-skill');
-const skillsinfo = document.querySelectorAll('.info-habilidades span');
+const skillsinfo = document.querySelectorAll('.info-habilidades div');
 
 if (iconesSkills.length && skillsinfo.length) {
     skillsinfo[0].classList.add('active')
