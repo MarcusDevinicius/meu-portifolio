@@ -26,36 +26,81 @@
         grid-template-rows: 5rem repeat(4, 1fr);
         grid-template-columns: 100%;
     }
+
+    section {
+        max-width: 100%;
+        background-color: orange;
+        height: 100vh;
+    }
     
+    section.inicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 23.5rem 1fr;
+        row-gap: 2rem;
+        height: 145vh;
+        background-color: darkgoldenrod;
+    }
+
+    section.inicio > aside {
+        background-color: pink;
+        grid-row: 2;
+        grid-column: 1;
+        justify-self: center;
+        width: 80%;
+        height: 450px;
+    }
+
+    section.inicio > aside {
+        background-image: url("../src/imgs/minha-perfil.png");
+        background-position: center;
+        background-size: cover;
+    }
+
     section.inicio > div {
         max-width: 100%;
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 3rem 13rem 8rem;
+        grid-template-columns: 10% minmax(60%, 80%) 10%;
+        grid-template-rows: 1rem 9rem 5rem 8rem;
+        grid-auto-flow: row;
+        margin: 0 auto;
     }
 
     section.inicio > div > h1 {
-        grid-row: 2/3;
+        grid-row: 2;
+        grid-column: 2;
+        justify-self: end;
+        align-self: end;
         background-color: rgb(89, 54, 9);
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         text-align: center;
-        justify-self: center;
-        align-self: center;
+        min-width: 385px;
+        max-width: 100%;
+        height: 7rem;
+        line-height: 2rem;
+        margin: 0 auto;
+        padding: 0.5rem;
     }
 
     section.inicio > div > h2 {
         grid-row: 3;
+        grid-column: 2;
         background-color: rgb(2, 87, 87);
         text-align: center;
-        justify-self: center;
+        justify-self: end;
         align-self: center;
-        width: 31rem;
+        max-width: 26rem;
+        min-width: 411px;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        padding: 0.1rem 0.2rem;
     }
 
     section.inicio > div > ul {
         grid-row: 4;
+        grid-column: 2;
         justify-self: center;
         align-self: center;
+        margin: 0 auto;
     }
 
     section.inicio > div > ul.ctt-desktop {
@@ -66,12 +111,15 @@
         display: block;
         background-color: red;
         height: 7.18rem;
-        max-width: 450px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        min-width: 300px;
+        max-width: 400px;
+        /*display: grid;
+        grid-template-columns: 1fr 1fr 1fr;*/
+        display: flex;
+        flex-direction: row;
         align-items: center;
         grid-gap: 0;
-        justify-items: center;
+        justify-content: space-evenly;
     }
 
     section.inicio > div > ul.ctt-mobile > li {
@@ -80,15 +128,14 @@
         align-items: center;
         justify-content: center;
         align-self: center;
-        background-color: gray;
         width: 100%;
     }
 
     section.inicio > div > ul.ctt-mobile > li > a.links-mobile {
         background-color: rgb(31, 58, 3);
         display: grid;
-        height: 90%;
-        width: 80%;
+        height: 89%;
+        width: 60%;
         grid-template-columns: 1fr;
         grid-template-rows: 68% 32%;
         font-family: "Jura", serif;
@@ -104,12 +151,13 @@
         background-color: blue;
         width: 70px;
         padding: 0.7rem;
-        border-radius: 0.9rem;
+        border-radius: 0.3rem;
     }
 
     section.inicio > div > ul.ctt-mobile > li > a > p {
         align-self: center;
-        font-weight: bolder;
+        font-weight: 200;
     }
+
 }
 
