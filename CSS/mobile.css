@@ -9,6 +9,7 @@
         justify-content: end;
         margin-right: 0.6rem;
         align-items: center;
+        width: 100%;
     }
 
     .cabecalho-mobile > span > img {
@@ -19,6 +20,11 @@
         border-radius: 8px;
     }
     
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1100px 510px 1000px 1000px;
+    }
 
     body {
         display: grid;
@@ -28,7 +34,7 @@
     }
 
     section {
-        max-width: 100%;
+        width: 100vw;
         background-color: orange;
         height: 100vh;
     }
@@ -36,9 +42,10 @@
     section.inicio {
         grid-template-columns: 1fr;
         grid-template-rows: 23.5rem 1fr;
-        row-gap: 2rem;
-        height: 145vh;
+        row-gap: 5rem;
+        height: 1100px;
         background-color: darkgoldenrod;
+        grid-row: 1;
     }
 
     section.inicio > aside {
@@ -47,13 +54,14 @@
         grid-column: 1;
         justify-self: center;
         width: 80%;
-        height: 450px;
+        height: 37rem;
     }
 
     section.inicio > aside {
         background-image: url("../src/imgs/minha-perfil.png");
         background-position: center;
         background-size: cover;
+        width: 100%;
     }
 
     section.inicio > div {
@@ -159,5 +167,72 @@
         font-weight: 200;
     }
 
+    section.sobre-mim {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 50vh;
+        grid-row: 2;
+    }
+
+    section.sobre-mim > aside {
+        display: none;
+    }
+
+    section.sobre-mim > div.info-texto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 200px;
+    }
+
+    section.sobre-mim > div.info-texto > h1 {
+        justify-self: center;
+        grid-row: 2;
+        font-size: 2.2rem;
+    }
+
+    section.sobre-mim > div.info-texto > p {
+        grid-row: 3;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        align-self: center;
+        justify-self: center;
+        padding: 0.1rem 0.2rem;
+        width: 89%;
+    }
+
+    section.habilidades {
+        background-color: rgb(57, 57, 45);
+        display: grid;
+        grid-template-rows: 100px 500px;
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    section.habilidades > h1 {
+        grid-column: 2;
+        grid-row: 1;
+        display: block;
+        color: white;
+        align-self: center;
+        justify-self: center;
+        font-size: 3rem;
+        font-size: 2.2rem;
+    }
+
+    section.habilidades > article {
+        display: none;
+    }
+
+    section.habilidades > aside {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: yellowgreen;
+        width: 100%;
+        align-self: start;
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(2, 200px);
+    }
 }
 

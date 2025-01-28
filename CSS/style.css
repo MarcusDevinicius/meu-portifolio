@@ -268,6 +268,10 @@ section.habilidades {
     height: 100vh;
 }
 
+section.habilidades > h1 {
+    display: none;
+}
+
 section.habilidades > article {
     justify-self: center;
     align-content: center;
@@ -320,14 +324,16 @@ section.habilidades > aside > a  {
     flex-wrap: wrap;
     padding: 8px 16px;
     justify-content: center;
-    border-radius: 50px;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    border-bottom: 3px solid rgb(132, 139, 158);
 }
 
 section.habilidades > aside > a:hover {
-    background-color: #0a0c4cc1;
-
+    background-color: #1b1f85a7;
+    border-bottom: 5px solid white;
 }
 
 
