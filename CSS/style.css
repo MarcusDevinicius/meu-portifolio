@@ -63,7 +63,7 @@ section {
 .cabecalho > nav > ul > li > a {
     text-decoration: none;
     color: rgb(132, 139, 158);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0.8rem;
     padding-right: 0.6rem;
     margin-right: 1rem;
@@ -80,7 +80,7 @@ section {
 
 .cabecalho > nav > ul > li > a:hover::after {
     height: 2.1rem;
-    top: 0.6rem;
+    top: 0.8rem;
     background-color: white;
 }
 
@@ -92,7 +92,7 @@ section {
     background-color: rgb(132, 139, 158);
     margin-left: 0.6rem;
     position: absolute;
-    top: 18.7px;
+    top: 22px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -105,22 +105,22 @@ section {
     margin-left: -25px;
 }
 
-main {
-    width: 99.7%;
-}
-
 section.inicio {
     /*background: linear-gradient(162deg, #000122, #11134b, #394080);*/
     background-color: transparent;
     margin-top: 0.9rem;
     height: 100vh;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 4.37rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4rem 1fr ;
+    grid-row-gap: 0.4rem;
+    
 }
 
-section.inicio > div {
-    height: 100vh;
+section.inicio > div.info-texto-container {
+    height: 100%;
+    grid-row: 2/-1;
+    align-self: center;
 }
 
 section.inicio > div > h1 {
@@ -202,7 +202,19 @@ section.inicio > div > ul > li > a:hover::after {
     transform: translate(2px, -2px);
 }
 
-section.inicio > aside {
+section.inicio > div.img-perfil-container {
+    grid-column: 2;
+    grid-row: 2/ -1;
+    justify-self: end;
+    height: 100%;
+    max-width: 43rem;
+}
+
+section.inicio > div > img {
+    max-width: 43rem;
+    height: 100%;
+}
+/*section.inicio > aside {
     background-color: yellowgreen;
     grid-column: 2;
     grid-row: 2/ -1;
@@ -210,7 +222,7 @@ section.inicio > aside {
     background-image: url("../src/imgs/minha-perfil.png");
     background-position: center;
     background-size: cover;
-}
+}*/
 
 
 section.sobre-mim {

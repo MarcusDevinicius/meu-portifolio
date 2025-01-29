@@ -42,35 +42,22 @@
     section.inicio {
         grid-template-columns: 1fr;
         grid-template-rows: 23.5rem 1fr;
-        row-gap: 5rem;
+        row-gap: ;
         height: 1100px;
         background-color: darkgoldenrod;
         grid-row: 1;
+        width: 100vw;
     }
 
-    section.inicio > aside {
-        background-color: pink;
-        grid-row: 2;
-        grid-column: 1;
-        justify-self: center;
-        width: 80%;
-        height: 37rem;
-    }
-
-    section.inicio > aside {
-        background-image: url("../src/imgs/minha-perfil.png");
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-    }
-
-    section.inicio > div {
+    section.inicio > div.info-texto-container {
         max-width: 100%;
         display: grid;
-        grid-template-columns: 10% minmax(60%, 80%) 10%;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1rem 9rem 5rem 8rem;
-        grid-auto-flow: row;
         margin: 0 auto;
+        grid-column: 1;
+        grid-row: 1;
+        background-color: red;
     }
 
     section.inicio > div > h1 {
@@ -111,61 +98,12 @@
         margin: 0 auto;
     }
 
-    section.inicio > div > ul.ctt-desktop {
-        display: none;
+    section.inicio > div.img-perfil-container {
+        grid-row: 2;
+        grid-column: 1;
+        margin: 0 auto;
     }
-
-    section.inicio > div > ul.ctt-mobile {
-        display: block;
-        background-color: red;
-        height: 7.18rem;
-        min-width: 300px;
-        max-width: 400px;
-        /*display: grid;
-        grid-template-columns: 1fr 1fr 1fr;*/
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        grid-gap: 0;
-        justify-content: space-evenly;
-    }
-
-    section.inicio > div > ul.ctt-mobile > li {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-        width: 100%;
-    }
-
-    section.inicio > div > ul.ctt-mobile > li > a.links-mobile {
-        background-color: rgb(31, 58, 3);
-        display: grid;
-        height: 89%;
-        width: 60%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 68% 32%;
-        font-family: "Jura", serif;
-        text-decoration: none;
-        color: white;
-        justify-items: center;
-
-    }
-
-    section.inicio > div > ul.ctt-mobile > li > a > img {
-        grid-row: 1;
-        align-self: center;
-        background-color: blue;
-        width: 70px;
-        padding: 0.7rem;
-        border-radius: 0.3rem;
-    }
-
-    section.inicio > div > ul.ctt-mobile > li > a > p {
-        align-self: center;
-        font-weight: 200;
-    }
+    
 
     section.sobre-mim {
         display: flex;
