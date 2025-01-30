@@ -31,7 +31,7 @@ linksInternos.forEach((link) => {
     link.addEventListener('click', scrollToSection);
 })
 
-const iconesSkills = document.querySelectorAll('aside .icones-skill');
+const iconesSkills = document.querySelectorAll('.icones-habilidades img');
 const skillsinfo = document.querySelectorAll('.info-habilidades div');
 
 if (iconesSkills.length && skillsinfo.length) {

@@ -22,35 +22,33 @@
     
     main {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1100px 510px 1000px 1000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 1rem;
     }
 
-    body {
+    /*body {
         display: grid;
         /*grid-template-rows: 5.6rem 41rem 11.5rem 20rem 1fr;*/
-        grid-template-rows: 5rem repeat(4, 1fr);
-        grid-template-columns: 100%;
-    }
+        /*grid-template-rows: 5rem, repeat(4, 1fr);
+        grid-template-columns: 1fr;
+    }*/
 
     section {
-        width: 100vw;
-        background-color: orange;
+        /*width: 100vw;*/
         height: 100vh;
     }
     
     section.inicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 23.5rem 1fr;
-        row-gap: ;
-        height: 1100px;
+        grid-template-rows: 1fr 1fr;
+        height: 130vh;
         background-color: darkgoldenrod;
         grid-row: 1;
-        width: 100vw;
+        /*width: 100vw;*/
     }
 
     section.inicio > div.info-texto-container {
-        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1rem 9rem 5rem 8rem;
@@ -90,80 +88,97 @@
         padding: 0.1rem 0.2rem;
     }
 
-    section.inicio > div > ul {
+    section.inicio > div > ul.ctt {
         grid-row: 4;
         grid-column: 2;
-        justify-self: center;
+        max-width: 26rem;
         align-self: center;
-        margin: 0 auto;
+        background-color: green;
     }
 
     section.inicio > div.img-perfil-container {
         grid-row: 2;
         grid-column: 1;
         margin: 0 auto;
+        background-color: dodgerblue;
+        width: 500px;
+    }
+
+    section.inicio > div.img-perfil-container img {
+        max-width: 100%;
+        display: block;
     }
     
 
     section.sobre-mim {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        height: 50vh;
         grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+
+        background-color: blueviolet;
     }
 
-    section.sobre-mim > aside {
+    section.sobre-mim > div.img-continer-sb {
         display: none;
     }
 
     section.sobre-mim > div.info-texto {
+        grid-row: 1;
+        grid-column: 1;
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 100px 200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
     }
 
     section.sobre-mim > div.info-texto > h1 {
         justify-self: center;
-        grid-row: 2;
+        align-self: center;
+        grid-row: 1;
         font-size: 2.2rem;
+        background-color: red;
+        height: 100px;
     }
 
     section.sobre-mim > div.info-texto > p {
-        grid-row: 3;
+        grid-row: 2;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: lighter;
         align-self: center;
         justify-self: center;
-        padding: 0.1rem 0.2rem;
-        width: 89%;
+        padding: 0.1rem 0;
+        max-width: 340px;
+        background-color: red;
     }
 
     section.habilidades {
         background-color: rgb(57, 57, 45);
         display: grid;
-        grid-template-rows: 100px 500px;
-        grid-template-columns: 10% 80% 10%;
+        grid-row: 3;
+        grid-column: 1;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr;
     }
 
     section.habilidades > h1 {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 1;
-        display: block;
         color: white;
-        align-self: center;
+        align-self: self-start;
         justify-self: center;
         font-size: 3rem;
         font-size: 2.2rem;
+        background-color: red;
     }
 
     section.habilidades > article {
         display: none;
     }
 
-    section.habilidades > aside {
-        grid-column: 2;
+    section.habilidades > div.icones-habilidades {
+        grid-column: 1;
         grid-row: 2;
         background-color: yellowgreen;
         width: 100%;

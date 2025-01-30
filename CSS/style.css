@@ -92,7 +92,7 @@ section {
     background-color: rgb(132, 139, 158);
     margin-left: 0.6rem;
     position: absolute;
-    top: 22px;
+    top: 21px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -111,7 +111,7 @@ section.inicio {
     margin-top: 0.9rem;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 8rem 1fr 1fr;
     grid-template-rows: 4rem 1fr ;
     grid-row-gap: 0.4rem;
     
@@ -121,22 +121,22 @@ section.inicio > div.info-texto-container {
     height: 100%;
     grid-row: 2/-1;
     align-self: center;
+    grid-column: 2;
+    max-width: 100%;
 }
 
 section.inicio > div > h1 {
-    
     color: white;
     max-width: 37rem;
     font-size: 3.7rem;
+    margin-left: -16px;
     margin-top: 5.2rem;
-    margin-left: 2.3rem;
     padding: 0.7rem;
     line-height: 3.7rem;
     font-weight: 500;
 }
 
 section.inicio > div > h2 {
-    margin-left: 3rem;
     margin-top: 0.1rem;
     color: white;
     max-width: 37rem;
@@ -145,7 +145,6 @@ section.inicio > div > h2 {
 
 section.inicio > div > ul {
     color: white;
-    margin-left: 2.12rem;
     margin-top: 0.5rem;
     width: 32rem;
     height: 2.9rem;
@@ -176,6 +175,7 @@ section.inicio > div > ul > li > a.links-desktop {
     color: #fff;
     /*background-color: rgb(255, 255, 255);*/
     padding: 0.9rem;
+    padding-left: 0;
     display: block;
     width: 9rem;
     font-weight: 800;
@@ -203,16 +203,17 @@ section.inicio > div > ul > li > a:hover::after {
 }
 
 section.inicio > div.img-perfil-container {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 2/ -1;
     justify-self: end;
-    height: 100%;
+    max-height: 90vh;
     max-width: 43rem;
 }
 
 section.inicio > div > img {
+    display: block;
     max-width: 43rem;
-    height: 100%;
+    max-height: 100%;
 }
 /*section.inicio > aside {
     background-color: yellowgreen;
@@ -229,65 +230,64 @@ section.sobre-mim {
     background-color: transparent;
     height: 90vh;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 136px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem 1fr 1fr;
+    column-gap: 5rem;
 }
 
-section.sobre-mim > aside {
-    grid-row: 1 /-1;
-    display: grid;
-    grid-template-rows: repeat(3, 33%);
-    grid-template-rows: 100px 120px 1fr;
-    align-items: center;
-    justify-content: center;
+section.sobre-mim > div.img-continer-sb {
+    grid-row: 2;
+    align-self: start;
+    justify-self: center;
 }
 
-section.sobre-mim > aside > img {
-    height: 500px;
+section.sobre-mim > div > img {
+    height: 450px;
     border-radius: 50%;
     grid-row: 2/-1;
     display: block;
 }
 
-section.sobre-mim > div {
-    display: grid;
-    grid-template-rows: 100px 120px 250px;
+section.sobre-mim > div.info-texto {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
 }
 
-section.sobre-mim > div > h1 {
+section.sobre-mim > div.info-texto > h1 {
     color: white;
-    grid-row: 2/2;
-    align-self: center;
     font-size: 3rem;
-   /*padding-top: 2.7rem;*/
 }
 
-section.sobre-mim > div > p {
+section.sobre-mim > div.info-texto > p {
     color: white;
-    grid-row: 3/ -1;
     text-align: left;
     text-indent: 1.5rem;
     font-size: 1.5rem;
-    
-    width: 500px;
+    max-width: 500px;
+    margin-top: 1rem;
 }
 
 section.habilidades {
-   
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 250px 250px 1fr;
+    grid-template-columns: 8rem 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1.5rem;
     height: 100vh;
 }
 
 section.habilidades > h1 {
-    display: none;
+    color: white;
+    font-size: 3rem;
+    grid-column: 2;
+    align-self: end;
 }
 
 section.habilidades > article {
-    justify-self: center;
+    justify-self: start;
     align-content: center;
-    grid-row: 2/ 4;
+    grid-row: 2;
+    grid-column: 2;
     background-color: #0a0c4c4d;
     width: 500px;
     height: 300px;
@@ -308,97 +308,54 @@ section.habilidades > article > div > h1 {
 
 section.habilidades > article > div > p {
     font-size: 1.8rem;
-   
     width: 430px;
     padding: 0.3rem;
     color: white;
 }
 
-section.habilidades > aside {
-    grid-column: 2;
-    grid-row: 2 /3;
+section.habilidades > div.icones-habilidades {
+    grid-column: 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 450px;
+    justify-self: center;
+}
+
+section.habilidades > div.icones-habilidades > img {
+    width: 100px;
+    cursor: pointer;
     justify-self: center;
     align-self: center;
-    column-gap: 40px;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    height: 350px;
-    width: 400px;
-}
-
-section.habilidades > aside > a  {
     background-color: #0a0c4c4d;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8px 16px;
-    justify-content: center;
-    border-top-left-radius: 1.3rem;
-    border-top-right-radius: 1.3rem;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+    padding: 0.5rem 0.8rem;
     border-bottom: 3px solid rgb(132, 139, 158);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    transition: all .3s ease-in-out;
 }
 
-section.habilidades > aside > a:hover {
-    background-color: #1b1f85a7;
+section.habilidades > div.icones-habilidades > img:hover {
+    background-color: #0a0c4c95;
     border-bottom: 5px solid white;
 }
 
-
-section.habilidades > aside > a > img {
-    width: 70px;
-    
-    align-self: center;
-    justify-self: center;
+section.habilidades > div.icones-habilidades > img.html {
+    padding: 0.8rem 0.8rem;
 }
 
-section.habilidades > aside > a > img.html {
-    width: 67px;
+section.habilidades > div.icones-habilidades > img.icone-css {
+    width: 110px;
 }
 
-section.habilidades > aside > a.html {
-    align-self: center;
-    justify-self: center;
+section.habilidades > div.icones-habilidades > img.icone-js {
+    padding: 0.6rem 1rem;
 }
 
-section.habilidades > aside > a.css {
-    align-self: center;
-    justify-self: center;
-}
-
-section.habilidades > aside > a > img.icone-css {
-    display: block;
-    height: 70px;
-    width: 70px;
+section.habilidades > div.icones-habilidades > img.icone-git {
     grid-column: 2;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
-}
-
-section.habilidades > aside > a.js {
-    align-self: center;
-    justify-self: center;
-}
-
-section.habilidades > aside > a > img.icone-js {
-    height: 70px;
-}
-
-section.habilidades > aside > a.git {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
-}
-
-section.habilidades > aside > a > img.icone-git {
-    grid-column: 2;
-    grid-row: 2;
+    padding: 0.9rem 0.8rem;
 }
 
 /*ANIMAÇÕES JavaScript*/
