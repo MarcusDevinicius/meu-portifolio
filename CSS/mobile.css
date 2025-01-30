@@ -9,7 +9,6 @@
         justify-content: end;
         margin-right: 0.6rem;
         align-items: center;
-        width: 100%;
     }
 
     .cabecalho-mobile > span > img {
@@ -18,21 +17,15 @@
         cursor: pointer;
         background-color: #0a0c4c4d;
         border-radius: 8px;
+        padding: 0.2rem 0.1rem;
+        margin-top: 0.7rem;
     }
     
     main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 1rem;
+        row-gap: 3rem;
     }
-
-    /*body {
-        display: grid;
-        /*grid-template-rows: 5.6rem 41rem 11.5rem 20rem 1fr;*/
-        /*grid-template-rows: 5rem, repeat(4, 1fr);
-        grid-template-columns: 1fr;
-    }*/
 
     section {
         /*width: 100vw;*/
@@ -43,7 +36,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         height: 130vh;
-        background-color: darkgoldenrod;
+        /*background-color: darkgoldenrod;*/
         grid-row: 1;
         /*width: 100vw;*/
     }
@@ -51,19 +44,20 @@
     section.inicio > div.info-texto-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1rem 9rem 5rem 8rem;
+        grid-template-rows: 8rem 4rem 4rem;
         margin: 0 auto;
         grid-column: 1;
         grid-row: 1;
-        background-color: red;
+        /*background-color: red;*/
+        height: 16rem;
     }
 
-    section.inicio > div > h1 {
-        grid-row: 2;
+    section.inicio > div.info-texto-container > h1 {
+        grid-row: 1;
         grid-column: 2;
         justify-self: end;
         align-self: end;
-        background-color: rgb(89, 54, 9);
+        /*background-color: rgb(89, 54, 9);*/
         font-size: 1.5rem;
         text-align: center;
         min-width: 385px;
@@ -74,10 +68,10 @@
         padding: 0.5rem;
     }
 
-    section.inicio > div > h2 {
-        grid-row: 3;
+    section.inicio > div.info-texto-container > h2 {
+        grid-row: 2;
         grid-column: 2;
-        background-color: rgb(2, 87, 87);
+        /*background-color: rgb(2, 87, 87);*/
         text-align: center;
         justify-self: end;
         align-self: center;
@@ -88,19 +82,19 @@
         padding: 0.1rem 0.2rem;
     }
 
-    section.inicio > div > ul.ctt {
-        grid-row: 4;
+    section.inicio > div.info-texto-container > ul.ctt {
+        grid-row: 3;
         grid-column: 2;
         max-width: 26rem;
         align-self: center;
-        background-color: green;
+        /*background-color: green;*/
     }
 
     section.inicio > div.img-perfil-container {
         grid-row: 2;
         grid-column: 1;
         margin: 0 auto;
-        background-color: dodgerblue;
+        /*background-color: dodgerblue;*/
         width: 500px;
     }
 
@@ -116,8 +110,8 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-gap: 0;
-
-        background-color: blueviolet;
+        /*background-color: blueviolet;*/
+        height: min-content;
     }
 
     section.sobre-mim > div.img-continer-sb {
@@ -129,7 +123,7 @@
         grid-column: 1;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: auto auto;
     }
 
     section.sobre-mim > div.info-texto > h1 {
@@ -137,8 +131,8 @@
         align-self: center;
         grid-row: 1;
         font-size: 2.2rem;
-        background-color: red;
-        height: 100px;
+        /*background-color: red;*/
+        height: 50px;
     }
 
     section.sobre-mim > div.info-texto > p {
@@ -150,11 +144,12 @@
         justify-self: center;
         padding: 0.1rem 0;
         max-width: 340px;
-        background-color: red;
+        /*background-color: red;*/
+        margin-bottom: 1rem;
     }
 
     section.habilidades {
-        background-color: rgb(57, 57, 45);
+        /*background-color: rgb(57, 57, 45);*/
         display: grid;
         grid-row: 3;
         grid-column: 1;
@@ -170,7 +165,8 @@
         justify-self: center;
         font-size: 3rem;
         font-size: 2.2rem;
-        background-color: red;
+        /*background-color: red;*/
+       
     }
 
     section.habilidades > article {
@@ -180,12 +176,13 @@
     section.habilidades > div.icones-habilidades {
         grid-column: 1;
         grid-row: 2;
-        background-color: yellowgreen;
-        width: 100%;
+        /*background-color: rgb(28, 93, 91);*/
+        width: auto;
         align-self: start;
         display: grid;
-        grid-gap: 0;
+        row-gap: 1.5rem;
         grid-template-columns: repeat(2, 200px);
+        justify-self: center;
     }
 }
 
