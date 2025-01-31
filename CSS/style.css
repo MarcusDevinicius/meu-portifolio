@@ -146,37 +146,26 @@ section.inicio > div > h2 {
 section.inicio > div > ul {
     color: white;
     margin-top: 0.5rem;
-    width: 32rem;
     height: 2.9rem;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 6.2rem 6.2rem 6.2rem;
-    column-gap: 2.6rem;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 section.inicio > div > ul > li {
     align-self: center;
     display: flex;
-    width: 8.9rem;
-    flex-wrap: wrap;
+    padding-right: 1rem;
 }
 
-section.inicio > div > ul > li.li-linkedin {
-    width: 8rem;
-}
-
-section.inicio > div > ul > li.li-git {
-    width: 7rem;
-    margin-left: 0.5rem;
-}
 
 section.inicio > div > ul > li > a.links-desktop {
     text-decoration: none;
     color: #fff;
     /*background-color: rgb(255, 255, 255);*/
-    padding: 0.9rem;
+    padding: 0.5rem 2rem;
     display: block;
-    width: 9rem;
+    width: ;
     font-weight: 800;
     letter-spacing: 2px;
     border-radius: 26px;
@@ -193,7 +182,7 @@ section.inicio > div > ul > li > a.links-desktop::after {
     content: "🡥";
     margin-left: 0.2rem;
     position: absolute;
-    top: 13px;
+    top: 7px;
     transition: transform .2s ease-in-out;
 }
 

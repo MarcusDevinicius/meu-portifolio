@@ -7,8 +7,9 @@
         display: block;
         display: flex;
         justify-content: end;
-        margin-right: 0.6rem;
         align-items: center;
+        margin-right: 0.6rem;
+        background-color: lightblue;
     }
 
     .cabecalho-mobile > span > img {
@@ -25,6 +26,7 @@
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 3rem;
+        background: lightgreen;
     }
 
     section {
@@ -85,9 +87,15 @@
     section.inicio > div.info-texto-container > ul.ctt {
         grid-row: 3;
         grid-column: 2;
-        max-width: 26rem;
         align-self: center;
-        /*background-color: green;*/
+    }
+
+    section.inicio > div.info-texto-container > ul.ctt > li {
+        padding-right: 0;
+    }
+
+    section.inicio > div.info-texto-container > ul.ctt > li > a {
+        background-color: ;
     }
 
     section.inicio > div.img-perfil-container {
