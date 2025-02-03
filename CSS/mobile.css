@@ -26,7 +26,7 @@
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 3rem;
-        background: lightgreen;
+        background: rgb(3, 35, 3);
     }
 
     section {
@@ -95,7 +95,7 @@
     }
 
     section.inicio > div.info-texto-container > ul.ctt > li > a {
-        background-color: ;
+        background-color: pink;
     }
 
     section.inicio > div.img-perfil-container {
@@ -103,7 +103,7 @@
         grid-column: 1;
         margin: 0 auto;
         /*background-color: dodgerblue;*/
-        width: 500px;
+        /*width: 500px;*/
     }
 
     section.inicio > div.img-perfil-container img {

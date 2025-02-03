@@ -111,7 +111,7 @@ section.inicio {
     margin-top: 0.9rem;
     height: 100vh;
     display: grid;
-    grid-template-columns: 8rem 1fr 1fr;
+    grid-template-columns: 6rem 1fr 1fr;
     grid-template-rows: 4rem 1fr ;
     grid-row-gap: 0.4rem;
     
@@ -127,7 +127,7 @@ section.inicio > div.info-texto-container {
 
 section.inicio > div > h1 {
     color: white;
-    max-width: ;
+    /*max-width: ;*/
     font-size: 3.7rem;
     margin-left: -16px;
     margin-top: 5.2rem;
@@ -146,16 +146,18 @@ section.inicio > div > h2 {
 section.inicio > div > ul {
     color: white;
     margin-top: 0.5rem;
-    height: 2.9rem;
+    height: 3rem;
     list-style-type: none;
     display: flex;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
 }
 
 section.inicio > div > ul > li {
     align-self: center;
     display: flex;
-    padding-right: 1rem;
+    padding: 0.5rem;
 }
 
 
@@ -165,12 +167,27 @@ section.inicio > div > ul > li > a.links-desktop {
     /*background-color: rgb(255, 255, 255);*/
     padding: 0.5rem 2rem;
     display: block;
-    width: ;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 2px;
     border-radius: 26px;
     position: relative;
     transition: all .2s ease-in-out;
+}
+
+section.inicio > div > ul > li > a.cv {
+    font-weight: 600;
+    border: 1px solid #2b2c3b;
+    background: white;
+    color: #000122;
+}
+
+section.inicio > div > ul > li > a.cv::after {
+    display: none;
+}
+
+section.inicio > div > ul > li > a.cv:hover {
+    transform: scale(0.9, 0.9);
+    background: rgb(222, 228, 249);
 }
 
 /*section.inicio > span > ul > li > a:hover {
@@ -258,7 +275,7 @@ section.sobre-mim > div.info-texto > p {
 
 section.habilidades {
     display: grid;
-    grid-template-columns: 8rem 1fr 1fr;
+    grid-template-columns: 6rem 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 1.5rem;
     height: 100vh;
@@ -269,6 +286,7 @@ section.habilidades > h1 {
     font-size: 3rem;
     grid-column: 2;
     align-self: end;
+    background: red;
 }
 
 section.habilidades > article {
@@ -346,6 +364,106 @@ section.habilidades > div.icones-habilidades > img.icone-git {
     padding: 0.9rem 0.8rem;
 }
 
+section.projetos {
+    display: grid;
+    grid-template-columns: 6rem 1fr 6rem;
+    grid-template-rows: 9rem 1fr;
+    row-gap: 1.5rem;
+    height: 105vh;
+}
+
+section.projetos > div.titulo-projetos {
+    grid-column: 2;
+    align-self: end;
+}
+
+section.projetos > div.titulo-projetos > h1 {
+    color: white;
+    font-size: 3rem;
+    justify-self: start;
+    background: red;
+}
+
+section.projetos > article {
+    height: 33rem;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 2rem;
+    background-color: rgb(27, 8, 8);
+    padding: 2rem 1.6rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+
+}
+
+section.projetos > article > div.container-projetos {
+    background: white;
+    display: flex;
+    margin-bottom: .5rem;
+    column-gap: .5rem;
+    max-width: 70%;
+    padding: 0.6rem;
+}
+
+section.projetos > article > div  > div.cover-projetos {
+    width: 23rem;
+    height: 14rem;
+    background-color: gray;
+    cursor: pointer;
+    position: relative;
+}
+
+section.projetos > article > div.container-projetos > .info-projetos {
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+section.projetos > article > div  > div.cover-projetos > img {
+    width: 100%;
+    height: 100%;
+}
+
+section.projetos > article > div  > div.cover-projetos::before {
+    content: ' ';
+    background: #00023993;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+section.projetos > article > div  > div.cover-projetos.ativo::before {
+    background: #00000000;
+}
+
+section.projetos > article > div  > div.cover-projetos > .details {
+    position: absolute;
+    color: white;
+    width: max-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+}
+
+section.projetos > article > div  > div.cover-projetos > .details.inativo {
+    display: none;
+}
+
+
+section.projetos > article > div  > div.cover-projetos > .details > p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: red;
+    width: 90px;
+} 
+
 /*ANIMAÇÕES JavaScript*/
 
 /*.js-scroll {
@@ -367,6 +485,8 @@ section.habilidades > article > div.active {
     display: block !important;
     animation: show .5s forwards;
 }
+
+
 
 @keyframes show {
     from {

@@ -50,6 +50,34 @@ if (iconesSkills.length && skillsinfo.length) {
     })
 }
 
+const coverProjeto = document.querySelectorAll('[data-projeto="cover"]');
+const detalhesProjeto = document.querySelectorAll('[data-projeto="cover"] .details' );
+coverProjeto.forEach((cover, index) => {
+        ['touchstart', 'mouseenter'].forEach((userEvents) => {
+            cover.addEventListener(userEvents, () => {
+                animaProjetoAtivar(index);
+            })
+        });
+    cover.addEventListener('mouseout', () => {
+        animaProjetoDesativar(index);
+    })
+})
+
+function animaProjetoAtivar(index) {
+    coverProjeto[index].classList.remove('inativo');
+    coverProjeto[index].classList.add('ativo');
+    detalhesProjeto[index].classList.remove('ativo');
+    detalhesProjeto[index].classList.add('inativo');
+}
+
+function animaProjetoDesativar(index) {
+    coverProjeto[index].classList.remove('ativo');
+    coverProjeto[index].classList.add('inativo');
+    detalhesProjeto[index].classList.remove('inativo');
+    detalhesProjeto[index].classList.add('ativo');
+}
+
+
 //iconesSkills.forEach((skill, index) => {
   //  skill.addEventListener('click', () => {
     //    navTabs(index)
