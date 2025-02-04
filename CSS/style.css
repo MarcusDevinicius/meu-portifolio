@@ -26,7 +26,7 @@ section {
     justify-content: end;
     align-items: center;
     width: 100%;
-    z-index: 1;
+    z-index: 2000;
 }
 
 .cabecalho > nav {
@@ -187,7 +187,7 @@ section.inicio > div > ul > li > a.cv::after {
 
 section.inicio > div > ul > li > a.cv:hover {
     transform: scale(0.9, 0.9);
-    background: rgb(222, 228, 249);
+    background: rgb(200, 209, 240);
 }
 
 /*section.inicio > span > ul > li > a:hover {
@@ -212,7 +212,6 @@ section.inicio > div.img-perfil-container {
     grid-row: 2/ -1;
     justify-self: end;
     max-height: 90vh;
-    max-width: 43rem;
 }
 
 section.inicio > div > img {
@@ -339,7 +338,7 @@ section.habilidades > div.icones-habilidades > img {
     border-bottom: 3px solid rgb(132, 139, 158);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 section.habilidades > div.icones-habilidades > img:hover {
@@ -366,7 +365,7 @@ section.habilidades > div.icones-habilidades > img.icone-git {
 
 section.projetos {
     display: grid;
-    grid-template-columns: 6rem 1fr 6rem;
+    grid-template-columns: 6rem 1fr 11.6rem;
     grid-template-rows: 9rem 1fr;
     row-gap: 1.5rem;
     height: 105vh;
@@ -392,12 +391,30 @@ section.projetos > article {
     flex-wrap: wrap;
     row-gap: 3rem;
     column-gap: 2rem;
-    background-color: rgb(27, 8, 8);
+    background-color: #0102317a;
     padding: 2rem 1.6rem;
     overflow-y: scroll;
     overflow-x: hidden;
     margin-bottom: 1rem;
+    border-radius: 10px;
+}
 
+section.projetos > article::-webkit-scrollbar {
+    width: 18px;
+}
+
+section.projetos > article::-webkit-scrollbar-thumb {
+    background: white;
+    border-left: 4px solid #151755;
+    border-right: 4px solid #151755;
+    border-radius: 8px;
+}
+
+section.projetos > article::-webkit-scrollbar-track {
+    background-color: #151755;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 section.projetos > article > div.container-projetos {
@@ -406,15 +423,18 @@ section.projetos > article > div.container-projetos {
     margin-bottom: .5rem;
     column-gap: .5rem;
     max-width: 70%;
-    padding: 0.6rem;
+    /*padding: 0.6rem;*/
+    
 }
 
 section.projetos > article > div  > div.cover-projetos {
-    width: 23rem;
-    height: 14rem;
+    max-width: 23rem;
+    max-height: 14rem;
     background-color: gray;
     cursor: pointer;
     position: relative;
+    transition: all .2s ease-in-out;
+    
 }
 
 section.projetos > article > div.container-projetos > .info-projetos {
@@ -426,12 +446,16 @@ section.projetos > article > div.container-projetos > .info-projetos {
 
 section.projetos > article > div  > div.cover-projetos > img {
     width: 100%;
-    height: 100%;
+    height: 100%; 
+}
+
+section.projetos > article > div  > div.cover-projetos.ativo {
+    transform: scale(1.2, 1.2);
 }
 
 section.projetos > article > div  > div.cover-projetos::before {
     content: ' ';
-    background: #00023993;
+    background: #0000008c;
     width: 100%;
     height: 100%;
     display: block;
@@ -456,13 +480,14 @@ section.projetos > article > div  > div.cover-projetos > .details.inativo {
     display: none;
 }
 
-
 section.projetos > article > div  > div.cover-projetos > .details > p {
     font-weight: bold;
     font-size: 1.5rem;
     background: red;
     width: 90px;
 } 
+
+
 
 /*ANIMAÇÕES JavaScript*/
 
