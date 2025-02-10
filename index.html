@@ -19,7 +19,8 @@
 <body>
     <header class="cabecalho">
         <nav class="menu">
-            <ul class="js-menu">
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul class="js-menu" data-menu="lista" id="menu">
                 <li><a href="#inicio" class="inicio-menu a-menu">Início</a></li>
                 <li><a href="#sobmim" class="sobmim-menu a-menu">Sobre Mim</a></li>
                 <li><a href="#habilidades" class="a-menu">Habilidades</a></li>
@@ -28,11 +29,11 @@
         </nav>
     </header>
 
-    <header class="cabecalho-mobile">
+    <!--<header class="cabecalho-mobile">
         <span>
             <img src="src/imgs/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-Hamburguer">
         </span>
-    </header>
+    </header>-->
     <main>
         <section class="inicio js-scroll ativo" id="inicio">
             <div class="info-texto-container">
@@ -40,7 +41,7 @@
                 <h2>Eu crio interfaces de usuário usando tecnologias modernas Web.</h2>
                 <ul class="ctt">
                     <li class="li-linkedin">
-                        <a href="" class="links-desktop">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/marcus-vinicius-de-lima/" class="links-desktop" target="_blank">LinkedIn</a>
                     </li>
                     <li class="li-git">
                         <a href=""  class="links-desktop">GitHub</a>

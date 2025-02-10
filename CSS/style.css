@@ -30,13 +30,16 @@ section {
 }
 
 .cabecalho > nav {
-    height: 1rem;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .cabecalho > nav > ul {
     display: flex;
     list-style-type: none;
-    height: 1rem;
     margin-right: 6.2rem;
     align-items: center;
 }
@@ -178,6 +181,7 @@ section.inicio > div > ul > li > a.cv {
     border: 1px solid #2b2c3b;
     background: white;
     color: #000122;
+    box-shadow: 2px 2px 2px 0 rgba(50, 50, 50, 0.258);
 }
 
 section.inicio > div > ul > li > a.cv::after {
@@ -211,6 +215,7 @@ section.inicio > div.img-perfil-container {
     grid-row: 2/ -1;
     justify-self: end;
     max-height: 624px;
+    box-shadow: -2px 0 3px rgba(71, 71, 71, 0.353);
 }
 
 section.inicio > div > img {
