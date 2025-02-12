@@ -50,6 +50,7 @@
         padding: 70px 16px 20px 16px;
         z-index: 200;
         box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.267);
+        
     }
 
     header.cabecalho [data-menu="lista"].ativo {
@@ -70,24 +71,41 @@
     }
 
     header.cabecalho [data-menu="lista"] li {
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
     }
 
     header.cabecalho [data-menu="lista"] a { 
-        /*background-color: white;*/
+        /*background-color: rgb(52, 52, 52);*/
         margin: 0;
+        padding: 0.7rem 1rem;
     }
 
     header.cabecalho [data-menu="lista"] a:hover {
-        font-weight: normal;
+        font-weight: 500;
     }
 
     header.cabecalho [data-menu="lista"] a.sobmim-menu {
         margin-left: 0;
     }
 
+    
     header.cabecalho [data-menu="lista"] a::after {
-        display: none;
+        content: ' ';
+        display: block;
+        background-color: rgb(132, 139, 158);
+        height: 0;
+        width: 2px;
+        position: absolute;
+        top: 40px;
+        left: 8px;
+    }
+
+    header.cabecalho [data-menu="lista"] a:hover::after {
+        height: 2px;
+        width: 150px;
+        color: black;
+        top: 40px;
+        left: 8px;
     }
 
     
@@ -100,22 +118,11 @@
         background-color: lightblue;
     }*/
 
-    .cabecalho-mobile > span > img {
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        background-color: #0a0c4c4d;
-        border-radius: 8px;
-        padding: 0.2rem 0.1rem;
-        margin-top: 0.7rem;
-        margin-right: 1rem;
-    }
-    
     main {
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 3rem;
-        /*background: rgb(3, 35, 3);*/
+        background: rgb(224, 158, 224);
     }
 
     section {
@@ -129,6 +136,7 @@
         height: 130vh;
         /*background-color: darkgoldenrod;*/
         grid-row: 1;
+        padding: 1rem .5rem;
         /*width: 100vw;*/
     }
 
@@ -184,7 +192,7 @@
     }
 
     section.inicio > div.info-texto-container > ul.ctt > li > a {
-        background-color: pink;
+        /*background-color: pink;*/
     }
 
     section.inicio > div.img-perfil-container {

@@ -427,7 +427,6 @@ section.projetos > article::-webkit-scrollbar-track {
 }
 
 section.projetos > article > div.container-projetos {
-    background: white;
     display: flex;
     margin-bottom: .5rem;
     column-gap: .5rem;
@@ -436,63 +435,70 @@ section.projetos > article > div.container-projetos {
     
 }
 
-section.projetos > article > div  > div.cover-projetos {
+section.projetos > article > div  > a.cover-projetos {
     max-width: 23rem;
     max-height: 14rem;
     background-color: gray;
-    cursor: pointer;
     position: relative;
-    transition: all .2s ease-in-out;
-    
+    transition: transform .2s ease-in-out;
+    display: block;
 }
 
-section.projetos > article > div.container-projetos > .info-projetos {
-    background: lightblue;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
+section.projetos > article > div  > a.cover-projetos.ativo {
+    transform: scale(1.1, 1.1);
 }
 
-section.projetos > article > div  > div.cover-projetos > img {
-    width: 100%;
-    height: 100%; 
-}
-
-section.projetos > article > div  > div.cover-projetos.ativo {
-    transform: scale(1.2, 1.2);
-}
-
-section.projetos > article > div  > div.cover-projetos::before {
-    content: ' ';
-    background: #0000008c;
+section.projetos > article > div  > a.cover-projetos::before {
+    content: '';
     width: 100%;
     height: 100%;
-    display: block;
+    background: #0000008c;
     position: absolute;
+    display: block;
 }
 
-section.projetos > article > div  > div.cover-projetos.ativo::before {
+section.projetos > article > div  > a.cover-projetos.ativo::before {
     background: #00000000;
 }
 
-section.projetos > article > div  > div.cover-projetos > .details {
+section.projetos > article > div  > a.cover-projetos > img {
+    width: 100%;
+    height: 100%;
+}
+
+section.projetos > article > div  > a.cover-projetos > .details {
+    background: red;
     position: absolute;
-    color: white;
-    width: max-content;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
-section.projetos > article > div  > div.cover-projetos > .details.inativo {
+section.projetos > article > div  > a.cover-projetos > .details.inativo {
     display: none;
 }
 
-section.projetos > article > div  > div.cover-projetos > .details > p {
+section.projetos > article > div  > a.cover-projetos > .details > p {
+    color: white;
+    background: green;
+    padding: .1rem .5rem;
     font-weight: 900;
     font-size: 1.5rem;
-    width: 90px;
-} 
+}
+
+/*
+section.projetos > article > div  > a.cover-projetos{
+    display: block;
+    background: red;
+    width: 100%;
+    height: 100%;
+}
+
+section.projetos > article > div  > div.cover-projetos > a > img {
+    width: 100%;
+    height: 100%; 
+    
+}
 
 
 

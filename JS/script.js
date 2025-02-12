@@ -1,11 +1,12 @@
 import initAnimaScroll from "./modules/anima-scroll.js";
 import initScrollToSection from "./modules/scroll-to-section.js";
+import initTabNav from "./modules/tab-nav-skills.js";
 import initAnimaCoverProjetos from "./modules/anima-cover-projetos.js";
 
 initAnimaScroll();
 initScrollToSection();
 initAnimaCoverProjetos();
-
+initTabNav();
 
 
 
@@ -68,6 +69,8 @@ function outsideClick(element, eventos, callBack) {
     }
 }
 outsideClick();
+
+
 
 
 
