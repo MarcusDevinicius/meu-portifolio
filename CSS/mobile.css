@@ -123,6 +123,8 @@
         grid-template-columns: 1fr;
         row-gap: 3rem;
         background: rgb(224, 158, 224);
+        
+
     }
 
     section {
@@ -311,6 +313,260 @@
     section.projetos > article > div  > div.cover-projetos {
         width: 20rem;
         height: 10rem;
+    }
+}
+
+@media(width >= 1098px) and (width <= 1173px) {
+    .cabecalho > nav > ul {
+        margin-right: 2.2rem;
+    }
+
+    section.inicio {
+        grid-template-columns: 3rem 1fr 1fr;
+        grid-template-rows: 4rem 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    section.inicio > div > h1 {
+        font-size: 38px;
+        margin-top: 2.2rem;
+
+    }
+
+    section.inicio > div > ul {
+        margin-top: 2rem;
+    }
+
+    section.inicio > div > ul > li > a {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    section.inicio > div.img-perfil-container {
+        height: 100%;
+    }
+
+    section.inicio > div > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.sobre-mim {
+        grid-template-rows: 6.5rem 1fr 1fr;
+        column-gap: 3rem;
+    }
+
+    section.sobre-mim > div.info-texto > h1 {
+        color: white;
+        font-size: 2.6rem;
+    }
+
+    section.sobre-mim > div.info-texto > p {
+        font-size: 1.4rem;
+        padding-right: 0.5rem;
+    }
+
+    /* section.sobre-mim > div.img-continer-sb {
+        grid-row: 2;
+        align-self: start;
+        justify-self: center;
+    } */
+
+    section.sobre-mim > div > img {
+        height: 350px;
+        border-radius: 50%;
+        grid-row: 2/-1;
+        display: block;
+        box-shadow: 2px 2px 2px 0 rgba(108, 108, 108, 0.448);
+    }
+
+    section.habilidades {
+        display: grid;
+        grid-template-columns: 5rem 1fr 1fr;
+        grid-template-rows: 11.2rem 1fr 2rem;
+        
+    }
+
+    section.habilidades > h1 {
+        color: white;
+        font-size: 2.6rem;
+    }
+
+
+    section.habilidades > article > div.info-skill {
+        max-width: 100%;
+    }
+
+    section.habilidades > article > div > h1 {
+        font-size: 1.8rem;
+    }
+
+    section.habilidades > article > div > p {
+        font-size: 1.7rem;
+        max-width: 100%;
+        color: white;
+    }
+
+    section.habilidades > div.icones-habilidades {
+        grid-column: 3;
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 350px;
+        justify-self: center;
+    }
+
+    section.habilidades > div.icones-habilidades > img {
+        width: 80px;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-css {
+        width: 90px;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-git {
+        grid-column: 2;
+        padding: 0.9rem 0.8rem;
+        align-self: start;
+    }
+
+    section.projetos {
+        grid-template-columns: 5rem 1fr 11.6rem;
+    }
+
+    section.projetos > div.titulo-projetos > h1 {
+        font-size: 2.6rem;
+    }
+
+    section.projetos > article {
+       justify-content: center;
+    }
+}
+
+@media(width >= 767px) and (width <= 1098px) {
+    .cabecalho > nav > ul {
+        margin-right: 2.2rem;
+    }
+
+    section.inicio {
+        grid-template-columns: 3rem 1fr 1fr;
+        grid-template-rows: 4rem 1fr;
+        padding-bottom: 2rem; 
+    }
+
+    section.inicio > div > h1 {
+        font-size: 38px;
+        margin-top: 2.2rem;
+        line-height: 2.7rem;
+    }
+
+    section.inicio > div > ul {
+        margin-top: 2rem;
+    }
+
+    section.inicio > div > ul > li > a {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    section.inicio > div.img-perfil-container {
+        display: none;
+    }
+
+    section.sobre-mim {
+        grid-template-rows: 6.5rem 1fr 1fr;
+        column-gap: 3rem;
+    }
+
+    section.sobre-mim > div.info-texto > h1 {
+        color: white;
+        font-size: 2.6rem;
+    }
+
+    section.sobre-mim > div.info-texto > p {
+        font-size: 1.4rem;
+        padding-right: 0.5rem;
+    }
+
+    /* section.sobre-mim > div.img-continer-sb {
+        grid-row: 2;
+        align-self: start;
+        justify-self: center;
+    } */
+
+    section.sobre-mim > div > img {
+        height: 350px;
+        border-radius: 50%;
+        grid-row: 2/-1;
+        display: block;
+        box-shadow: 2px 2px 2px 0 rgba(108, 108, 108, 0.448);
+    }
+
+    section.habilidades {
+        display: grid;
+        grid-template-columns: 3rem 1fr 1fr;
+        grid-template-rows: 11.2rem 1fr 2rem;
+        
+    }
+
+    section.habilidades > h1 {
+        color: white;
+        font-size: 2.6rem;
+    }
+
+    section.habilidades > article {
+        max-width: 450px;
+    }
+
+    section.habilidades > article > div.info-skill {
+        max-width: 100%;
+    }
+
+    section.habilidades > article > div > h1 {
+        font-size: 1.8rem;
+    }
+
+    section.habilidades > article > div > p {
+        font-size: 1.7rem;
+        max-width: 100%;
+        color: white;
+    }
+
+    section.habilidades > div.icones-habilidades {
+        grid-column: 3;
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 350px;
+        justify-self: center;
+    }
+
+    section.habilidades > div.icones-habilidades > img {
+        width: 80px;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-css {
+        width: 90px;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-git {
+        grid-column: 2;
+        padding: 0.9rem 0.8rem;
+        align-self: start;
+    }
+
+    section.projetos {
+        grid-template-columns: 5rem 1fr 11.6rem;
+    }
+
+    section.projetos > div.titulo-projetos > h1 {
+        font-size: 2.6rem;
+    }
+
+    section.projetos > article {
+       justify-content: center;
     }
 }
 
