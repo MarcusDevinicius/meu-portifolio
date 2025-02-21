@@ -122,7 +122,6 @@ section.inicio > div.info-texto-container {
     align-self: center;
     grid-column: 2;
     max-width: 98%;
-    background: red;
 }
 
 section.inicio > div > h1 {
