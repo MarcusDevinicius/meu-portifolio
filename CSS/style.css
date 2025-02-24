@@ -9,8 +9,12 @@ body, html {
     background: linear-gradient(163deg, #000122, #11134b, #394080);
 }
 
+* {
+    color: #e8e7ff;
+}
+
 section {
-    border-bottom: 1px solid rgba(65, 69, 86, 0.268);
+    border-bottom: 1px solid rgb(58, 64, 101);
 }
 
 .cabecalho {
@@ -75,14 +79,14 @@ section {
 }
 
 .cabecalho > nav > ul > li > a:hover {
-    color: white;
+    color: #e8e7ff;
     font-weight: 600;
 }
 
 .cabecalho > nav > ul > li > a:hover::after {
     height: 2.1rem;
     top: 0.8rem;
-    background-color: white;
+    background-color: #e8e7ff;
 }
 
 .cabecalho > nav > ul > li > a::after {
@@ -117,15 +121,14 @@ section.inicio {
 }
 
 section.inicio > div.info-texto-container {
-    height: 100%;
     grid-row: 2/-1;
-    align-self: center;
+    align-self: start;
     grid-column: 2;
     max-width: 98%;
+    margin-top: 3rem;
 }
 
 section.inicio > div > h1 {
-    color: white;
     font-size: 3.7rem;
     margin-left: -16px;
     margin-top: 5.2rem;
@@ -136,13 +139,11 @@ section.inicio > div > h1 {
 
 section.inicio > div > h2 {
     margin-top: 0.1rem;
-    color: white;
     max-width: 37rem;
     font-weight: 100;
 }
 
 section.inicio > div > ul {
-    color: white;
     margin-top: 0.5rem;
     list-style-type: none;
     display: flex;
@@ -159,8 +160,6 @@ section.inicio > div > ul > li {
 
 section.inicio > div > ul > li > a.links-desktop {
     text-decoration: none;
-    color: #fff;
-    /*background-color: rgb(255, 255, 255);*/
     padding: 0.5rem 2rem;
     display: block;
     font-weight: 600;
@@ -174,7 +173,7 @@ section.inicio > div > ul > li > a.links-desktop {
 section.inicio > div > ul > li > a.cv {
     font-weight: 600;
     border: 1px solid #2b2c3b;
-    background: white;
+    background: #e8e7ff;
     color: #000122;
     box-shadow: 2px 2px 2px 0 rgba(50, 50, 50, 0.258);
 }
@@ -188,20 +187,26 @@ section.inicio > div > ul > li > a.cv:hover {
     background: rgb(200, 209, 240);
 }
 
+section.inicio > div > ul > li > a > img.arrow-icon {
+    width: 20px;
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+
 /*section.inicio > span > ul > li > a:hover {
     /*background-color: white;
     color: #11134b;
 }*/
 
-section.inicio > div > ul > li > a.links-desktop::after {
+/* section.inicio > div > ul > li > a.links-desktop::after {
     content: "🡥";
     margin-left: 0.2rem;
     position: absolute;
     top: 7px;
     transition: transform .2s ease-in-out;
-}
+} */
 
-section.inicio > div > ul > li > a:hover::after {
+section.inicio > div > ul > li > a:hover img.arrow-icon {
     transform: translate(2px, -2px);
 }
 
@@ -209,13 +214,14 @@ section.inicio > div.img-perfil-container {
     grid-column: 3;
     grid-row: 2/ -1;
     justify-self: end;
-    max-height: 624px;
+    /* max-height: 624px; */
     box-shadow: -2px 0 3px rgba(71, 71, 71, 0.353);
+    height: 750px;
 }
 
 section.inicio > div > img {
     display: block;
-    max-width: 43rem;
+    max-width: 100%;
     max-height: 100%;
 }
 /*section.inicio > aside {
@@ -242,6 +248,7 @@ section.sobre-mim > div.img-continer-sb {
     grid-row: 2;
     align-self: start;
     justify-self: center;
+    
 }
 
 section.sobre-mim > div > img {
@@ -249,6 +256,7 @@ section.sobre-mim > div > img {
     border-radius: 50%;
     grid-row: 2/-1;
     display: block;
+    box-shadow: 2px 0px 2px 2px #19181e12;
 }
 
 section.sobre-mim > div.info-texto {
@@ -258,12 +266,10 @@ section.sobre-mim > div.info-texto {
 }
 
 section.sobre-mim > div.info-texto > h1 {
-    color: white;
     font-size: 3rem;
 }
 
 section.sobre-mim > div.info-texto > p {
-    color: white;
     text-align: left;
     text-indent: 1.5rem;
     font-size: 1.5rem;
@@ -280,7 +286,6 @@ section.habilidades {
 }
 
 section.habilidades > h1 {
-    color: white;
     font-size: 3rem;
     grid-column: 2;
     align-self: end;
@@ -300,6 +305,7 @@ section.habilidades > article {
     align-items: center;
     border-radius: 1.2rem;
     max-width: 100%;
+    box-shadow: 2px 0px 2px 2px #19181e12;
 }
 
 
@@ -314,14 +320,12 @@ section.habilidades > article > div > h1 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    color: white;
 }
 
 section.habilidades > article > div > p {
     font-size: 1.8rem;
     max-width: 430px;
     padding: 0.3rem;
-    color: white;
 }
 
 section.habilidades > div.icones-habilidades {
@@ -349,7 +353,7 @@ section.habilidades > div.icones-habilidades > img {
 
 section.habilidades > div.icones-habilidades > img:hover {
     background-color: #0a0c4c95;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid #e8e7ff;
 }
 
 section.habilidades > div.icones-habilidades > img.html {
@@ -374,7 +378,6 @@ section.projetos {
     grid-template-columns: 6rem 1fr 11.6rem;
     grid-template-rows: 9rem 1fr;
     row-gap: 1.5rem;
-    height: 105vh;
 }
 
 section.projetos > div.titulo-projetos {
@@ -383,7 +386,6 @@ section.projetos > div.titulo-projetos {
 }
 
 section.projetos > div.titulo-projetos > h1 {
-    color: white;
     font-size: 3rem;
     grid-column: 2;
     align-self: end;
@@ -411,7 +413,7 @@ section.projetos > article::-webkit-scrollbar {
 }
 
 section.projetos > article::-webkit-scrollbar-thumb {
-    background: white;
+    background: #e8e7ff;
     border-left: 4px solid #151755;
     border-right: 4px solid #151755;
     border-radius: 8px;
@@ -476,8 +478,6 @@ section.projetos > article > div  > a.cover-projetos > .details.inativo {
 }
 
 section.projetos > article > div  > a.cover-projetos > .details > p {
-    color: white;
-    background: green;
     padding: .1rem .5rem;
     font-weight: 900;
     font-size: 1.5rem;
@@ -564,3 +564,4 @@ section.inicio > div > ul.ctt-mobile > li > a > img {
     width: 50px;
 
 }
+
