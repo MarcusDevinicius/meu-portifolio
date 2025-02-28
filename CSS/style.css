@@ -221,7 +221,7 @@ section.inicio > div.img-perfil-container {
 
 section.inicio > div > img {
     display: block;
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 /*section.inicio > aside {

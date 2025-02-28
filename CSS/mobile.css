@@ -200,7 +200,8 @@
         margin-top: 2rem;
         /*background-color: dodgerblue;*/
         /*width: 500px;*/
-       height: 622px;
+        height: 622px;
+        height: fit-content;
     }
 
     section.inicio > div.img-perfil-container img {
