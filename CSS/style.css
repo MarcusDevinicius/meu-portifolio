@@ -5,6 +5,15 @@
     font-family: "Jura", serif;
 }
 
+p, a, h2 {
+    font-family: "Poppins", serif;
+
+}
+
+h1 {
+    font-family: "Roboto", serif;
+}
+
 body, html {
     background: linear-gradient(163deg, #000122, #11134b, #394080);
 }
@@ -63,24 +72,26 @@ section {
     height: 3rem;
     display: flex;
     align-items: center;
+    /* background: gray; */
+    margin-right: 12px;
 }
 
 .cabecalho > nav > ul > li > a {
     text-decoration: none;
     color: rgb(132, 139, 158);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0.8rem;
     padding-right: 0.6rem;
     margin-right: 1rem;
     position: relative;
     display: block;
-    font-weight: 500;
+    /* background: red; */
     transition: all .2s ease-in-out;
 }
 
 .cabecalho > nav > ul > li > a:hover {
     color: #e8e7ff;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .cabecalho > nav > ul > li > a:hover::after {
@@ -97,7 +108,7 @@ section {
     background-color: rgb(132, 139, 158);
     margin-left: 0.6rem;
     position: absolute;
-    top: 21px;
+    top: 22px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -107,7 +118,7 @@ section {
 } 
 
 .cabecalho > nav > ul > li > a.sobmim-menu {
-    margin-left: -25px;
+    margin-left: -16px;
 }
 
 section.inicio {
@@ -129,18 +140,19 @@ section.inicio > div.info-texto-container {
 }
 
 section.inicio > div > h1 {
-    font-size: 3.7rem;
+    font-size: 4.8rem;
     margin-left: -16px;
     margin-top: 5.2rem;
     padding: 0.7rem;
-    line-height: 3.7rem;
-    font-weight: 500;
+    line-height: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 section.inicio > div > h2 {
     margin-top: 0.1rem;
     max-width: 37rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 section.inicio > div > ul {
@@ -162,13 +174,18 @@ section.inicio > div > ul > li > a.links-desktop {
     text-decoration: none;
     padding: 0.5rem 2rem;
     display: block;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 16px;
     letter-spacing: 2px;
     border-radius: 26px;
     position: relative;
     transition: all .2s ease-in-out;
+    color: #e8e7ff;
 }
+
+/* section.inicio > div > ul > li > a.links-desktop:hover {
+    font-weight: 400;
+} */
 
 section.inicio > div > ul > li > a.cv {
     font-weight: 600;
@@ -267,6 +284,7 @@ section.sobre-mim > div.info-texto {
 
 section.sobre-mim > div.info-texto > h1 {
     font-size: 3rem;
+    letter-spacing: 2px;
 }
 
 section.sobre-mim > div.info-texto > p {
@@ -275,6 +293,7 @@ section.sobre-mim > div.info-texto > p {
     font-size: 1.5rem;
     max-width: 500px;
     margin-top: 1rem;
+    font-weight: 200;
 }
 
 section.habilidades {
@@ -289,6 +308,7 @@ section.habilidades > h1 {
     font-size: 3rem;
     grid-column: 2;
     align-self: end;
+    letter-spacing: 2px;
 }
 
 section.habilidades > article {
@@ -296,7 +316,7 @@ section.habilidades > article {
     align-content: center;
     grid-row: 2;
     grid-column: 2;
-    background-color: #0a0c4c4d;
+    background-color: #13155c95;
     /* height: 20rem; */
     padding: 1rem 1.5rem;
     display: flex;
@@ -320,12 +340,15 @@ section.habilidades > article > div > h1 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
+    letter-spacing: 4px;
 }
 
 section.habilidades > article > div > p {
     font-size: 1.8rem;
     max-width: 430px;
     padding: 0.3rem;
+    font-weight: 200;
+
 }
 
 section.habilidades > div.icones-habilidades {
@@ -336,6 +359,7 @@ section.habilidades > div.icones-habilidades {
     grid-template-columns: 1fr 1fr 1fr;
     width: 450px;
     justify-self: center;
+    max-height: 310px;
 }
 
 section.habilidades > div.icones-habilidades > img {
@@ -343,7 +367,7 @@ section.habilidades > div.icones-habilidades > img {
     cursor: pointer;
     justify-self: center;
     align-self: center;
-    background-color: #0a0c4c4d;
+    background-color: #13155c95;
     padding: 0.5rem 0.8rem;
     border-bottom: 3px solid rgb(132, 139, 158);
     border-top-left-radius: 1rem;
@@ -352,7 +376,7 @@ section.habilidades > div.icones-habilidades > img {
 }
 
 section.habilidades > div.icones-habilidades > img:hover {
-    background-color: #0a0c4c95;
+    background-color: #24278395;
     border-bottom: 5px solid #e8e7ff;
 }
 
@@ -369,8 +393,15 @@ section.habilidades > div.icones-habilidades > img.icone-js {
 }
 
 section.habilidades > div.icones-habilidades > img.icone-git {
-    grid-column: 2;
+    grid-column: 1;
+    grid-row: 2;
     padding: 0.9rem 0.8rem;
+}
+
+section.habilidades > div.icones-habilidades > img.icone-figma {
+    grid-column: 2;
+    grid-row: 2;
+    height: 106px;
 }
 
 section.projetos {
@@ -389,6 +420,7 @@ section.projetos > div.titulo-projetos > h1 {
     font-size: 3rem;
     grid-column: 2;
     align-self: end;
+    letter-spacing: 2px;
 }
 
 section.projetos > article {
@@ -479,8 +511,9 @@ section.projetos > article > div  > a.cover-projetos > .details.inativo {
 
 section.projetos > article > div  > a.cover-projetos > .details > p {
     padding: .1rem .5rem;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.5rem;
+    letter-spacing: 3px;
 }
 
 /*

@@ -121,7 +121,7 @@
     main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 300px 1fr 650px;
+        grid-template-rows: 1fr 300px 550px 650px;
         row-gap: 3rem;
         /* background: rgb(224, 158, 224); */
     }
@@ -173,7 +173,7 @@
         justify-self: end;
         align-self: center;
         max-width: 398px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 0 auto;
         padding: 0.1rem 0.2rem;
     }
@@ -289,7 +289,34 @@
         column-gap: 4rem;
         grid-template-columns: 1fr 1fr;
         justify-self: center;
+       max-height: initial;
     }
+
+    section.habilidades > div.icones-habilidades > img.html {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-css  {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-js {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-git {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-figma {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
 
     section.projetos {
         grid-template-columns: 1fr;
@@ -425,9 +452,14 @@
     }
 
     section.habilidades > div.icones-habilidades > img.icone-git {
-        grid-column: 2;
+        grid-column: 1;
         padding: 0.9rem 0.8rem;
         align-self: start;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-figma {
+        align-self: start;
+        height: 86px;
     }
 
     section.projetos {
@@ -551,6 +583,12 @@
     }
 
     section.habilidades > div.icones-habilidades > img.icone-git {
+        grid-column: 1;
+        padding: 0.9rem 0.8rem;
+        align-self: start;
+    }
+
+    section.habilidades > div.icones-habilidades > img.icone-figma {
         grid-column: 2;
         padding: 0.9rem 0.8rem;
         align-self: start;
