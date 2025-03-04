@@ -254,10 +254,10 @@ section.inicio > div > img {
 
 section.sobre-mim {
     background-color: transparent;
-    height: 90vh;
+    /* height: 90vh; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 8rem 1fr 1fr;
+    grid-template-rows: 7rem 1fr 4rem;
     column-gap: 5rem;
 }
 
@@ -270,6 +270,7 @@ section.sobre-mim > div.img-continer-sb {
 
 section.sobre-mim > div > img {
     height: 450px;
+    width: 450px;
     border-radius: 50%;
     grid-row: 2/-1;
     display: block;

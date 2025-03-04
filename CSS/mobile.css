@@ -18,10 +18,12 @@
         text-transform: uppercase;
         color: #020326;
         letter-spacing: 0.7px;
-        font-weight: bold;
+        font-weight: 600;
+        font-size: 1.1rem;
         cursor: pointer;
         z-index: 300;
         box-shadow: 2px 2px 3px 0 rgba(56, 56, 56, 0.227);
+        font-family: "Poppins", serif;
     }
 
     [data-menu="button"]::before {
@@ -262,6 +264,8 @@
         grid-column: 1;
         grid-template-rows: 3rem 1fr;
         grid-template-columns: 1fr;
+        padding-top: 1rem;
+        background: red;
     }
 
     section.habilidades > h1 {
@@ -380,6 +384,7 @@
     section.sobre-mim {
         grid-template-rows: 6.5rem 1fr 1fr;
         column-gap: 3rem;
+        background-color: burlywood;
     }
 
     section.sobre-mim > div.info-texto > h1 {
@@ -400,6 +405,7 @@
 
     section.sobre-mim > div > img {
         height: 350px;
+        width: 350px;
         border-radius: 50%;
         grid-row: 2/-1;
         display: block;
@@ -506,8 +512,9 @@
     }
 
     section.sobre-mim {
-        grid-template-rows: 6.5rem 1fr 1fr;
+        grid-template-rows: 6.5rem 1fr 4rem;
         column-gap: 3rem;
+        /* background: red; */
     }
 
     section.sobre-mim > div.info-texto > h1 {
@@ -527,7 +534,8 @@
     } */
 
     section.sobre-mim > div > img {
-        height: 350px;
+        height: 300px;
+        width: 300px;
         border-radius: 50%;
         grid-row: 2/-1;
         display: block;
