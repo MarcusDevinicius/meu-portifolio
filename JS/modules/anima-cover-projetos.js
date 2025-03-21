@@ -27,4 +27,11 @@ export default function initAnimaCoverProjetos(){
         detailsProjetos[index].classList.add('ativo');
         detailsProjetos[index].classList.remove('inativo');
     }
+
+    coverProjetos.forEach((cover) => {
+        // console.log(cover)
+        cover.addEventListener('click', () =>{
+            verificaHref(event)
+        });
+    });
 }

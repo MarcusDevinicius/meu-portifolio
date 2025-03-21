@@ -50,14 +50,14 @@ function outsideClick(element, eventos, callBack) {
     const html = document.documentElement;
     const outside = 'data-outside';
     
-    if(!element.hasAttribute(outside)) {
-        eventos.forEach((userEvents) => {
+    // if(!element.hasAttribute(outside)) {
+        // eventos.forEach((userEvents) => {
             setTimeout(() => {
-                html.addEventListener(userEvents, handleOutsideClick);
+                html.addEventListener(eventos, handleOutsideClick);
             })
-        })
-        element.setAttribute(outside, '');
-    }
+        // })
+        // element.setAttribute(outside, '');
+    // }
     function handleOutsideClick(event) {
         if(!element.contains(event.target)) {
             element.removeAttribute(outside, '');
@@ -69,10 +69,6 @@ function outsideClick(element, eventos, callBack) {
     }
 }
 outsideClick();
-
-
-
-
 
 
 
