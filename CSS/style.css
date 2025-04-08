@@ -19,7 +19,7 @@ body, html {
 }
 
 * {
-    color: #e8e7ff;
+    color: #e8e8ff;
 }
 
 section {
@@ -504,6 +504,7 @@ section.projetos > article > div  > a.cover-projetos > .details {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 section.projetos > article > div  > a.cover-projetos > .details.inativo {

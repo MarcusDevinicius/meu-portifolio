@@ -8,15 +8,6 @@ initScrollToSection();
 initAnimaCoverProjetos();
 initTabNav();
 
-
-
-
-
-
-
-
-
-
 //iconesSkills.forEach((skill, index) => {
   //  skill.addEventListener('click', () => {
     //    navTabs(index)
@@ -69,6 +60,16 @@ function outsideClick(element, eventos, callBack) {
     }
 }
 outsideClick();
+
+// function coverProjetos() {
+//     const pjt1 = document.querySelector('.cover-projetos img');
+//     if (window.innerWidth < 767) {
+//         console.log(pjt1.src);
+//         pjt1.src = 'src/imgs/longevidade-de-pets-mobile.jpg'
+//     }
+// }
+
+// coverProjetos();
 
 
 
