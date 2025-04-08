@@ -343,6 +343,10 @@
         width: 20rem;
         height: 10rem;
     }
+
+    section.projetos > article > div  > a.cover-projetos > .details > p {
+        font-size: 1rem;
+    }
 }
 
 @media(width >= 1098px) and (width <= 1173px) {
