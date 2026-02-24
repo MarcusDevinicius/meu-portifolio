@@ -223,10 +223,6 @@
         height: min-content;
     }
 
-    section.sobre-mim > div.img-continer-sb {
-        display: none;
-    }
-
     section.sobre-mim > div.info-texto {
         grid-row: 1;
         grid-column: 1;
@@ -346,6 +342,14 @@
 
     section.projetos > article > div  > a.cover-projetos > .details > p {
         font-size: 1rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer > p {
+        font-size: 12px;
     }
 }
 
@@ -482,6 +486,8 @@
     section.projetos > article {
        justify-content: center;
     }
+
+    
 }
 
 @media(width >= 767px) and (width <= 1098px) {
@@ -617,5 +623,7 @@
     section.projetos > article {
        justify-content: center;
     }
+
+    
 }
 
