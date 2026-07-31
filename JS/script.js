@@ -8,11 +8,6 @@ initScrollToSection();
 initAnimaCoverProjetos();
 initTabNav();
 
-//iconesSkills.forEach((skill, index) => {
-  //  skill.addEventListener('click', () => {
-    //    navTabs(index)
-    //})
-//})
 
 const eventos = ['click'];
 function initMenuMobile() {
