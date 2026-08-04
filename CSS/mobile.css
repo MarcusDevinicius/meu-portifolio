@@ -77,7 +77,6 @@
     }
 
     header.cabecalho [data-menu="lista"] a { 
-        /*background-color: rgb(52, 52, 52);*/
         margin: 0;
         padding: 0.7rem 1rem;
     }
@@ -110,34 +109,20 @@
         left: 8px;
     }
 
-    
-
-   /* header.cabecalho-mobile {
-        display: block;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        background-color: lightblue;
-    }*/
-
     main {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
         row-gap: 3rem;
-        /* background: rgb(224, 158, 224); */
     }
 
     
     section.inicio {
         grid-template-columns: 1fr;
         grid-template-rows: 400px 1fr;
-        /* height: 130vh; */
-        /* background-color: darkgoldenrod; */
         grid-row: 1;
         padding: 1rem .5rem;
         padding-top: 5.6rem;
-        /*width: 100vw;*/
     }
 
     section.inicio > div.info-texto-container {
@@ -192,8 +177,6 @@
         grid-column: 1;
         margin: 0 auto;
         margin-top: 2rem;
-        /*background-color: dodgerblue;*/
-        /*width: 500px;*/
         height: 500px;
         width: 300px;
         height: fit-content;
@@ -212,7 +195,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-gap: 0;
-        /* background-color: blueviolet; */
         height: min-content;
     }
 
@@ -230,7 +212,6 @@
         align-self: center;
         grid-row: 1;
         font-size: 2.2rem;
-        /*background-color: red;*/
         height: 50px;
     }
 
@@ -243,7 +224,6 @@
         justify-self: center;
         padding: 0.1rem 0;
         max-width: 340px;
-        /*background-color: red;*/
         margin-bottom: 1rem;
     }
 
@@ -274,7 +254,6 @@
     section.habilidades > div.icones-habilidades {
         grid-column: 1;
         grid-row: 2;
-        /*background-color: rgb(28, 93, 91);*/
         width: auto;
         align-self: start;
         display: grid;
@@ -300,9 +279,14 @@
         grid-row: 2;
     }
 
+    section.habilidades > div.icones-habilidades > img.icone-react {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
     section.habilidades > div.icones-habilidades > img.icone-git {
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 3;
     }
 
     section.habilidades > div.icones-habilidades > img.icone-figma {
@@ -458,6 +442,11 @@
         width: 90px;
     }
 
+    section.habilidades > div.icones-habilidades > img.icone-react {
+        height: 87px;
+        align-self: start;
+    }
+
     section.habilidades > div.icones-habilidades > img.icone-git {
         grid-column: 1;
         padding: 0.9rem 0.8rem;
@@ -593,8 +582,13 @@
         width: 90px;
     }
 
+    section.habilidades > div.icones-habilidades > img.icone-react {
+        height: 90px;
+        align-self: start;
+    }
+
     section.habilidades > div.icones-habilidades > img.icone-git {
-        grid-column: 1;
+        grid-column: 3;
         padding: 0.9rem 0.8rem;
         align-self: start;
     }
